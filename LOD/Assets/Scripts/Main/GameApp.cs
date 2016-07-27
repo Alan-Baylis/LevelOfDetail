@@ -6,7 +6,7 @@ public class GameApp : MonoBehaviour {
 	DownLoadItem item;
 	// Use this for initialization
 	void Start () {
-		string url = "http://182.254.171.250:8011/android/download/3.0.8/download.zip";
+		string url = "http://localhost:8011/android/download/1.0.1/download.zip";
 		CoroutineManager.Init (this.gameObject);	
 		DownLoadManager.Instance().Init(true);
 		item = DownLoadManager.Instance ().GetDownLoadItem (url, 10);
